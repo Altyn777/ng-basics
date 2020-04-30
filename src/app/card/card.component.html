@@ -6,6 +6,8 @@
 <!--  <pre>{{ obj | json }}</pre>-->
   <p> {{getInfo()}}</p>
   <div>
-    <img src="{{ imgUrl }}">
+    <img [src]="imgUrl"> <!--байндим атрибут в []; из js подтягивает динамическое значение переменной, js в " -->
+    <br>
+    <button [disabled]="disabled">Enable</button>
   </div>
 </div>

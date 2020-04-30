@@ -36,12 +36,14 @@ export class CardComponent implements OnInit {
   //   }
   // }
 
+  disabled = false
   imgUrl: string = 'https://pm1.narvii.com/6870/5936de1640bf1fab70fea18ad06bbb45ba97a6der1-512-512v2_128.jpg'
 
   ngOnInit(): void {
     console.log('ngOnIint')
     setTimeout(() => {
       this.imgUrl = 'https://66.media.tumblr.com/avatar_ced0e61bc527_128.pnj'
+      this.disabled = true
     }, 3000)
   }
 
