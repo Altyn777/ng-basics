@@ -1,13 +1,13 @@
 <div class="card">
   <h2>{{ title }}</h2>
   <p>{{ text }}</p>
-<!--  <strong>Number: {{number}}</strong>-->
-<!--  <em>{{array}}</em>-->
-<!--  <pre>{{ obj | json }}</pre>-->
-  <p> {{getInfo()}}</p>
+
+  <div class="buttons">
+    <button (click)="changeTitle()">Change title</button>
+    <button (click)="title = 'inline'">Change title inline</button>
+  </div>
+
   <div>
-    <img [src]="imgUrl"> <!--байндим атрибут в []; из js подтягивает динамическое значение переменной, js в " -->
-    <br>
-    <button [disabled]="disabled">Enable</button>
+    <input type="text" (input)="inputHandler($event)" [value]="title"> <!--    нативный ивент-->
   </div>
 </div>
