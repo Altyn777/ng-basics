@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import {CardComponent } from './card/card.component';
@@ -12,7 +13,8 @@ import { FormComponent } from './form/form.component'
     FormComponent,
   ],
   imports: [ // ...и другие модули
-    BrowserModule // этот позволяет работать в браузере
+    BrowserModule, // этот позволяет работать в браузере
+    FormsModule, // позволяет работать с формами, есть ngModule
   ],
   providers: [], // тут хранятся различные сервисы, интерсептеры
   bootstrap: [AppComponent] // все приложение стартует с этого компонента

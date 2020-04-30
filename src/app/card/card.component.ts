@@ -4,7 +4,6 @@ import {Component, OnInit} from '@angular/core'
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
-  // interpolation: ['{{', '}}'], // по умолчанию
 })
 export class CardComponent implements OnInit {
   title = 'My Card Title'
@@ -17,8 +16,7 @@ export class CardComponent implements OnInit {
     this.title = 'Changed'
   }
 
-  inputHandler(value) {
-    // const value = event.target.value
-    this.title = value
+  changeHandler() {
+    console.log(this.title)
   }
 }
